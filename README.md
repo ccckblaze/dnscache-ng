@@ -1,7 +1,4 @@
-
-# ARCHIVED 
-
-dnscache for Node
+dnscache for Node ( next generation )
 ===================
 
 This module wraps the [dns](http://nodejs.org/api/dns.html) module methods and provide a caching layer in between.
@@ -19,14 +16,14 @@ Once this module is enabled, all the subsequent calls to `require('dns')` are wr
 Installation
 ------------
 
-`npm install dnscache`
+`npm install dnscache-ng`
 
 Usage
 -----
 
 ```javascript
 var dns = require('dns'),
-    dnscache = require('dnscache')({
+    dnscache = require('dnscache-ng')({
         "enable" : true,
         "ttl" : 300,
         "cachesize" : 1000
@@ -36,7 +33,7 @@ var dns = require('dns'),
     //all the methods of dns are wrapped, this one just shows lookup on an example
     
     //will call the wrapped dns
-    dnscache.lookup('www.yahoo.com', function(err, result) {
+    dnscache.lookup('www.baidu.com', function(err, result) {
         //do something with result
     });
     
@@ -72,13 +69,7 @@ var Cache = function(config) {
 ```
 
 
-Build Status
-------------
-
-[![Build Status](https://secure.travis-ci.org/yahoo/dnscache.png?branch=master)](http://travis-ci.org/yahoo/dnscache)
-
-
 Node Badge
 ----------
 
-[![NPM](https://nodei.co/npm/dnscache.png)](https://nodei.co/npm/dnscache/)
+[![NPM](https://nodei.co/npm/dnscache-ng.png)](https://nodei.co/npm/dnscache-ng/)

@@ -1,8 +1,8 @@
 {
-    "name": "dnscache",
-    "description": "dnscache for Node",
-    "author": "Vinit Sacheti <vsacheti@yahoo.com>",
-    "version": "1.0.2",
+    "name": "dnscache-ng",
+    "description": "dnscache for Node Next Generation",
+    "author": "ccckblaze <ccckblaze@sina.com>",
+    "version": "1.0.3",
     "keywords": [
         "dnscache",
         "dns"
@@ -14,12 +14,12 @@
         "posttest": "nyc check-coverage --lines 100 --functions 100 --branches 100 && nyc report --reporter=lcov"
     },
     "bugs": {
-        "url": "http://github.com/yahoo/dnscache/issues"
+        "url": "http://github.com/ccckblaze/dnscache-ng/issues"
     },
     "license": "BSD",
     "repository": {
         "type": "git",
-        "url": "http://github.com/yahoo/dnscache.git"
+        "url": "http://github.com/ccckblaze/dnscache-ng.git"
     },
     "devDependencies": {
         "async": "^2.6.2",
